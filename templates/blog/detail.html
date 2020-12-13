@@ -1,0 +1,11 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<h1 class="alert alert-danger">{{post.title}}</h1>
+	<p>{{post.body}}</p>
+	<p><strong>Last Updated On: {{post.updated_date}}</strong></p>
+	<p><strong style="float: right">Published On: {{post.published_date}}</strong></p>
+</div>
+{% endblock %}
